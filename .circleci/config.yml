@@ -1,2 +1,8 @@
 version: 2.1
 setup: true
+
+workflows:
+  setup:
+    jobs:
+      - hold:
+          type: approval
